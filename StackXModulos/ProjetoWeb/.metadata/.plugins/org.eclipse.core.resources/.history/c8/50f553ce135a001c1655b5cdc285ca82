@@ -1,0 +1,71 @@
+package br.com.stackx.projweb.dao;
+
+import br.com.stackx.projweb.model.Estado;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+public class EstadoDAO extends Estado 
+{
+	//insert
+	public void insert() 
+	{
+		try
+		{
+			Connection connection = DAO.getConnection();
+			
+			PreparedStatement preparedStatement = connection.prepareStatement("INSERT INTO Estado (nome, sigla, codigoIbge) VALUES (?, ?, ?)");
+			preparedStatement.setString(1, nome);
+			preparedStatement.setString(2, sigla);
+			preparedStatement.setInt(3, codigoIbge);
+			preparedStatement.executeUpdate();
+			
+			
+			preparedStatement.close();
+			connection.commit();
+			connection.close();
+			
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+			
+		}
+		
+		
+	}
+	
+	//update
+	public void update() 
+	{
+		
+		try
+		{
+			
+		}
+		catch (Exception e) 
+		{
+			
+			
+		}
+		
+	}
+	
+	//select
+	public void select() 
+	{
+		
+		try
+		{
+			
+		}
+		catch (Exception e) 
+		{
+			
+			
+		}
+		
+	}
+	
+
+}

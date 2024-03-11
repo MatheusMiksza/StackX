@@ -1,0 +1,5 @@
+package br.com.stackx.projweb.model;
+
+public class Estado {
+
+}

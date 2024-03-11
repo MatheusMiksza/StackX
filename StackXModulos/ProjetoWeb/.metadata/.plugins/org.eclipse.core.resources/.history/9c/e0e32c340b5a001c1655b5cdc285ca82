@@ -1,0 +1,10 @@
+package br.com.stackx.projweb.model;
+
+public class Estado 
+{
+	protected int idEstado;
+	protected String nome;
+	protected String sigla;
+	protected int codigoIbge;
+
+}

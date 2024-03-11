@@ -1,0 +1,31 @@
+package br.com.stackx.teste;
+
+import br.com.stackx.projweb.dao.DAO;
+import br.com.stackx.projweb.dao.EstadoDAO;
+
+public class EstadoDAOTeste {
+
+	public static void main(String[] args) 
+	{
+		try
+		{
+			DAO.init();//inicializando o banco de dados
+			
+			EstadoDAO estadoDAO = new EstadoDAO();
+			estadoDAO.setNome("Paraná");
+			estadoDAO.setSigla("PR");
+			estadoDAO.setCodigoIbge(41);
+			estadoDAO.insert();
+			
+			System.out.println("FIM!");
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package br.com.stackx.projweb.teste;
+
+import br.com.stackx.projweb.dao.DAO;
+import br.com.stackx.projweb.dao.EstadoDAO;
+
+public class EstadoDAOTeste {
+
+	public static void main(String[] args) 
+	{
+		try
+		{
+			DAO.init();//inicializando o banco de dados
+
+			
+			
+			EstadoDAO estadoDAO = new EstadoDAO();
+			estadoDAO.setNome("Santa Catarina");
+			estadoDAO.setSigla("SC");
+			estadoDAO.setCodigoIbge(15);
+			
+			
+			estadoDAO.insert();
+			
+			System.out.println("FIM!");
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+			
+		}
+		
+
+	}
+
+}

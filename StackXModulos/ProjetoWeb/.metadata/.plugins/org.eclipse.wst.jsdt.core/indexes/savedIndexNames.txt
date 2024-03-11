@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\User\OneDrive - 4results\Área de Trabalho\StackX modulos\ProjetoWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2833728224.index
+583049414.index
+2686533536.index
+2133716179.index
+820771650.index
+1750619065.index
